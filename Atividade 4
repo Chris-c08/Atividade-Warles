@@ -2,7 +2,7 @@
 programa {
   funcao inicio() {
     //Declaração de variáveis
-      real n1,n2,n3,n4,media_Aritmetica
+      real nota1,nota2,nota3,nota4,media
 
       //Entrada de dados
       escreva("Informe a primeira nota")
@@ -15,34 +15,32 @@ programa {
       leia(n4)
 
       //Processamento
-      media_Aritmetica= n1+ n2+ n3+n4/4
+      media= nota1+ nota2+ nota3 +nota4/4
 
       //Saída de dados 
-      escreva("A media aritmetica do aluno é", media_Aritmetica)
-      
-  
-}
+      escreva("A media do aluno é", media)
+   }
 }
 
 04 
 programa {
   funcao inicio() {
     //Declaração de variáveis 
-    real janeiro,fevereiro,marco,media_Aritmetica
+    real janeiro, fevereiro, marco, media
 
     //Entrada de dados
-    escreva("Informe o valor gasto em janeiro")
+    escreva("Qual foi o valor gasto em janeiro: ")
     leia (janeiro)
-    escreva("Informe o valor gasto em fevereiro")
+    escreva("Qual foi o valor gasto em fevereiro: ")
     leia(fevereiro)
-    escreva("Informe o valor gasto em março")
+    escreva("Qual foi o valor gasto em março: ")
     leia(marco)
 
     //Processamento 
-    media_Aritmetica= (janeiro+fevereiro+marco) / 3
+    media= (janeiro+fevereiro+marco) / 3
 
     //Saída de dados 
-    escreva("A média aritmética é", media_Aritmetica)
+    escreva("A média é", media)
   }
 }
 
@@ -53,19 +51,20 @@ programa {
     real altura,peso_ideal
     
     //Declaração de constante
-    const real k=72.7
-    const  inteiro b=58
+    constante real k=72.7
+    constante inteiro b=58
 
     //Entrada de dados 
-    escreva("Informe a altura")
+    escreva("Informe a altura: ")
     leia(altura)
 
     //Processamento
     peso_ideal= k*altura-b
 
     //Saída de dados
-    escreva("O seu peso ideal é", peso_ideal)
+    escreva("O peso ideal é", peso_ideal)
   }
+}
 
 06
 progama{
@@ -87,7 +86,6 @@ progama{
     // Saida de dados
     escreva("O valor trocado de x ", x , " O valor trocado de y ", y
   }
-}
 }
 
 07
@@ -125,9 +123,7 @@ programa {
     fahrenheit = celcius * 9/5 + 32
 
     //saida de dados
-    escreva(" a temperatura em fahrenhat é: ", fahrenheit)
-
-    
+    escreva(" a temperatura em fahrenheit é: ", fahrenheit)
   }
 }
 
@@ -135,15 +131,15 @@ programa {
 programa {
   funcao inicio() {
     //Declaração de variavel
-    inteiro num, centena, dezena, unidade, cont 
+    inteiro numero, centena, dezena, unidade, cont 
 
     //Entrada de Dados 
     escreva("Informe um número com três digitos: ")
-    leia(num)
+    leia(numero)
 
     //processamento
-    centena = num / 100
-    cont = num % 100
+    centena = numero / 100
+    cont = numero % 100
     dezena = cont / 10
     cont = cont % 10
     unidade = cont
@@ -155,19 +151,17 @@ programa {
 programa {
   funcao inicio() {
     //Declaração de variavel
-     real ganhador1, ganhador2, ganhador3
+     real vencedor1, vencedor2, vencedor3
 
      //Declaração de constante
      const inteiro valortotal = 780.000
 
-    //Entrada de Dados
-
     //processamento
-     ganhador1 = valortotal * 0.46
-     ganhador2 = valortotal * 0.32
-     ganhador3 = valortotal * 0.22
+     vencedor1 = valortotal * 0.46
+     vencedor2 = valortotal * 0.32
+     vencedor3 = valortotal * 0.22
 
      //saida dos dados
-     escreva("O premio para o primeiro ganhador sera ", ganhador1 ,"00 O segundo sera ", ganhador2 , "00 E o terceiro ", ganhador3, "00")
+     escreva("O premio para o primeiro vencedor sera ", vencedor1 ,"00 O segundo sera ", vencedor2 , "00 E o terceiro ", vencedor3, "00")
   }
 }
